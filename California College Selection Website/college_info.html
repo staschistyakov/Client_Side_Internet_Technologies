@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bay Area Colleges and Universities</title>
+    <link rel="stylesheet" href="college_info.css">
+    <script src="college_info.js" defer></script>
+  </head>
 
+  <body>
+    <div id="all">
+
+      <div id="title"><h1>Bay Area Colleges and Universities</h1></div>
+
+      <div id="main_table">
+
+        <table id="table_tuit">
+          <tr id="top_row">
+            <th id="t_name">Name</th>
+            <th id="t_sath">SAT High</th>
+            <th id="t_satl">SAT Low</th>
+            <th id="t_tuit">Tuition</th>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="search_space">
+
+        <div id="search_title">Search criteria</div>
+        <div id="search_criteria">
+
+        <input type="radio" id="public" name="college_type" value="public" checked>Public
+        <input type="radio" id="private" name="college_type" value="private">Private
+        <input type="radio" id="dontcare" name="college_type" value="Don't Care">Don't Care <br>
+
+        <table id="search_table">
+          <tr>
+            <th>Maximum Tuition<p id="leave_blank">leave blank for don't care</p></th>
+            <th><input type="text" id="max_tuit"></th>
+          </tr>
+          <tr>
+            <th>Maximum High SAT<br><p id="leave_blank">leave blank for don't care</p></th>
+            <th><input type="text" id="max_sat"></th>
+          </tr>
+          <tr>
+            <th>Minimum Low SAT<br><p id="leave_blank">leave blank for don't care</p></th>
+            <th><input type="text" id="min_sat"></th>
+          </tr>
+        </table>
+
+        <input type="button" value="Update" id="update">
+
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
